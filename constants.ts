@@ -22,7 +22,7 @@ export const PRODUCTS: Product[] = [
     id: 'ai1',
     name: 'ChatGPT Plus / Team',
     description: 'GPT-4 mới nhất, duyệt web, DALL-E 3, phân tích dữ liệu nâng cao.',
-    price: 99000,
+    price: 60000,              // 50k (sheet) + 10k
     originalPrice: 500000,
     category: 'AI',
     duration: '1M',
@@ -36,7 +36,7 @@ export const PRODUCTS: Product[] = [
     id: 'ai2',
     name: 'Gemini Advanced',
     description: 'Mô hình AI mạnh nhất Google, tích hợp Google Workspace, xử lý đa phương thức.',
-    price: 120000,
+    price: 60000,              // Google AI Pro 50k + 10k
     originalPrice: 490000,
     category: 'AI',
     duration: '1M',
@@ -99,7 +99,7 @@ export const PRODUCTS: Product[] = [
     category: 'Game',
     duration: 'Lifetime',
     usage: 'Key',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg',
+    image: 'https://s.yimg.com/ny/api/res/1.2/PlY47Qr4W1mB.SYwxa7dCw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media.zenfs.com/en/windows_central_293/92258d67f10bd948050f356bd7d3faa1',
     rating: 5.0,
     soldCount: 1500,
     tags: []
@@ -108,7 +108,7 @@ export const PRODUCTS: Product[] = [
     id: 'e1',
     name: 'Netflix Premium 4K',
     description: 'Xem phim không giới hạn, chất lượng 4K UHD. Bảo hành trọn đời gói.',
-    price: 69000,
+    price: 75000,              // 65k + 10k
     originalPrice: 260000,
     category: 'Entertainment',
     duration: '1M',
@@ -122,7 +122,7 @@ export const PRODUCTS: Product[] = [
     id: 'e2',
     name: 'YouTube Premium',
     description: 'Không quảng cáo, nghe nhạc tắt màn hình. Nâng cấp chính chủ.',
-    price: 25000,
+    price: 35000,              // chính chủ 25k + 10k
     originalPrice: 79000,
     category: 'Entertainment',
     duration: '1M',
@@ -136,7 +136,7 @@ export const PRODUCTS: Product[] = [
     id: 'e3',
     name: 'Spotify Premium',
     description: 'Nghe nhạc chất lượng cao, không quảng cáo. Nâng cấp chính chủ.',
-    price: 19000,
+    price: 310000,             // gói rẻ nhất 300k + 10k
     originalPrice: 59000,
     category: 'Entertainment',
     duration: '1M',
@@ -152,7 +152,7 @@ export const PRODUCTS: Product[] = [
     id: 'd1',
     name: 'Canva Pro',
     description: 'Mở khóa toàn bộ tính năng Pro, kho ảnh, font chữ. Nâng cấp chính chủ.',
-    price: 99000,
+    price: 20000,              // gói 1 tháng 10k + 10k
     originalPrice: 1200000,
     category: 'Design',
     duration: '1Y',
@@ -166,7 +166,7 @@ export const PRODUCTS: Product[] = [
     id: 'd2',
     name: 'CapCut Pro',
     description: 'Full tính năng chỉnh sửa video chuyên nghiệp, xóa logo, Cloud Space.',
-    price: 150000,
+    price: 25000,              // gói rẻ nhất 15k + 10k
     originalPrice: 450000,
     category: 'Design',
     duration: '1Y',
@@ -180,7 +180,7 @@ export const PRODUCTS: Product[] = [
     id: 'd3',
     name: 'Adobe All Apps',
     description: 'Full bộ Adobe: Photoshop, Illustrator, Premiere... Cloud 100GB.',
-    price: 350000,
+    price: 660000,             // 650k + 10k
     originalPrice: 1800000,
     category: 'Design',
     duration: '1M',
@@ -196,7 +196,7 @@ export const PRODUCTS: Product[] = [
     id: 'cl1',
     name: 'Google Drive 2TB',
     description: 'Lưu trữ dữ liệu an toàn bảo mật, add vào mail chính chủ.',
-    price: 299000,
+    price: 460000,             // 450k + 10k
     originalPrice: 2250000,
     category: 'Cloud',
     duration: 'Lifetime',
@@ -210,7 +210,7 @@ export const PRODUCTS: Product[] = [
     id: 'cl2',
     name: 'Google One 100GB',
     description: 'Gói cơ bản cho nhu cầu lưu trữ ảnh và tài liệu cá nhân.',
-    price: 150000,
+    price: 160000,             // 150k + 10k
     originalPrice: 450000,
     category: 'Cloud',
     duration: '1Y',
@@ -226,7 +226,7 @@ export const PRODUCTS: Product[] = [
     id: 'w1',
     name: 'Microsoft 365 Personal',
     description: 'Word, Excel, PowerPoint, 1TB OneDrive. Tài khoản chính chủ.',
-    price: 290000,
+    price: 30000,              // Office 365 20k + 10k
     originalPrice: 1290000,
     category: 'Learning',
     duration: '1Y',
@@ -240,7 +240,7 @@ export const PRODUCTS: Product[] = [
     id: 'w2',
     name: 'Grammarly Premium',
     description: 'Kiểm tra ngữ pháp, đạo văn tiếng Anh chuyên sâu.',
-    price: 150000,
+    price: 310000,             // 300k + 10k
     originalPrice: 2500000,
     category: 'Learning',
     duration: '6M',
@@ -256,7 +256,7 @@ export const PRODUCTS: Product[] = [
     id: 'dev1',
     name: 'GitHub Copilot',
     description: 'Trợ lý lập trình AI, code nhanh hơn, thông minh hơn.',
-    price: 120000,
+    price: 120000,             // không thấy trong sheet → giữ nguyên
     originalPrice: 250000,
     category: 'Dev',
     duration: '1M',
@@ -270,7 +270,7 @@ export const PRODUCTS: Product[] = [
     id: 'seo1',
     name: 'Grok AI',
     description: 'Chatbot nổi loạn của xAI. Cập nhật tin tức thời gian thực từ X. Hài hước, châm biếm và không ngán trả lời bất cứ điều gì.',
-    price: 250000,
+    price: 410000,             // Grok AI chính chủ 400k + 10k
     originalPrice: 4500000,
     category: 'SEO',
     duration: '1M',
@@ -311,6 +311,7 @@ export const PRODUCTS: Product[] = [
     tags: ['Sale Sốc']
   }
 ];
+
 
 export const FAQS: FAQ[] = [
   {
