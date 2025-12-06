@@ -55,7 +55,7 @@ export const PRODUCTS: Product[] = [
     category: 'AI',
     duration: '1M',
     usage: 'Shared',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/e/ed/Midjourney_Emblem.png',
+    image: 'https://foxfio.com/wp-content/uploads/2023/05/Midjourney_Emblem.png',
     rating: 4.8,
     soldCount: 2100,
     tags: []
@@ -69,7 +69,7 @@ export const PRODUCTS: Product[] = [
     category: 'AI',
     duration: '1M',
     usage: 'Private',
-    image: 'https://i.imgur.com/8JkX4yq.png', // Placeholder
+    image: 'https://original.fontsinuse.com/fontsinuse.com/use-images/N229/229981/229981.jpeg', // Placeholder
     rating: 4.7,
     soldCount: 500,
     tags: []
@@ -85,7 +85,7 @@ export const PRODUCTS: Product[] = [
     category: 'Game',
     duration: '1M',
     usage: 'Private',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0f/Xbox_Game_Pass_logo.svg',
+    image: 'https://s.yimg.com/ny/api/res/1.2/PlY47Qr4W1mB.SYwxa7dCw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media.zenfs.com/en/windows_central_293/92258d67f10bd948050f356bd7d3faa1',
     rating: 4.9,
     soldCount: 4100,
     tags: ['Best Seller']
@@ -99,7 +99,7 @@ export const PRODUCTS: Product[] = [
     category: 'Game',
     duration: 'Lifetime',
     usage: 'Key',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg',
+    image: 'https://s.yimg.com/ny/api/res/1.2/PlY47Qr4W1mB.SYwxa7dCw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media.zenfs.com/en/windows_central_293/92258d67f10bd948050f356bd7d3faa1',
     rating: 5.0,
     soldCount: 1500,
     tags: []
@@ -157,7 +157,7 @@ export const PRODUCTS: Product[] = [
     category: 'Design',
     duration: '1Y',
     usage: 'Upgrade',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Canva_icon_2021.svg',
+    image: 'https://adshopkeys.com/wp-content/uploads/2024/07/Canva-Pro.png',
     rating: 5.0,
     soldCount: 56000,
     tags: ['Best Seller', 'Education']
@@ -171,7 +171,7 @@ export const PRODUCTS: Product[] = [
     category: 'Design',
     duration: '1Y',
     usage: 'Upgrade',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Capcut_logo.svg',
+    image: 'https://gshare.vn/wp-content/uploads/2025/05/capcut-pro.jpg',
     rating: 4.7,
     soldCount: 4300,
     tags: ['New']
@@ -195,13 +195,13 @@ export const PRODUCTS: Product[] = [
   {
     id: 'cl1',
     name: 'Google Drive 2TB',
-    description: 'Lưu trữ dữ liệu an toàn vĩnh viễn, add vào mail chính chủ.',
+    description: 'Lưu trữ dữ liệu an toàn bảo mật, add vào mail chính chủ.',
     price: 299000,
     originalPrice: 2250000,
     category: 'Cloud',
     duration: 'Lifetime',
     usage: 'Upgrade',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo_%282020-present%29.svg',
+    image: 'https://taphoammo.net/img/google-one-google-drive-google-photo-nang-cap-dung-luong-chinh-chu-bao-hanh-tron-oi_566846.png',
     rating: 5.0,
     soldCount: 1200,
     tags: ['Hot Trend']
@@ -215,7 +215,7 @@ export const PRODUCTS: Product[] = [
     category: 'Cloud',
     duration: '1Y',
     usage: 'Upgrade',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Google_One_cloud_icon.svg/1024px-Google_One_cloud_icon.svg.png',
+    image: 'https://cdn2.fptshop.com.vn/unsafe/Uploads/images/tin-tuc/122576/Originals/Doi-net-ve-google-one-tuong-lai-moi-cua-google-drive-4.jpg',
     rating: 4.8,
     soldCount: 800,
     tags: []
@@ -231,7 +231,7 @@ export const PRODUCTS: Product[] = [
     category: 'Learning',
     duration: '1Y',
     usage: 'Private',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg',
+    image: 'https://cdn.ankhang.vn/media/product/28580_phan_mem_microsoft_365_personal_english_subscr_1yr_apac_em_medialess_emerging_market_p10_qq2_01896.jpg',
     rating: 4.9,
     soldCount: 2100,
     tags: []
@@ -245,7 +245,7 @@ export const PRODUCTS: Product[] = [
     category: 'Learning',
     duration: '6M',
     usage: 'Shared',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e2/Grammarly_logo.svg',
+    image: 'https://getnhanh.net/wp-content/uploads/2021/10/Tai-Khoan-Grammarly-Premium.jpg',
     rating: 4.8,
     soldCount: 1500,
     tags: []
@@ -261,21 +261,21 @@ export const PRODUCTS: Product[] = [
     category: 'Dev',
     duration: '1M',
     usage: 'Private',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/2/29/GitHub_Copilot_logo.svg',
+    image: 'https://images.ctfassets.net/wfutmusr1t3h/47hzFdXO0PLAEO1cZXXDJK/847afb2e4e0c514524f41604d55dc687/512x160-GitHub-Copilot_Logo-Dark__1_.png',
     rating: 5.0,
     soldCount: 300,
     tags: ['Hot']
   },
   {
     id: 'seo1',
-    name: 'Ahrefs Standard',
-    description: 'Công cụ SEO số 1 thế giới. Phân tích backlink, keyword. (Chung)',
+    name: 'Grok AI',
+    description: 'Chatbot nổi loạn của xAI. Cập nhật tin tức thời gian thực từ X. Hài hước, châm biếm và không ngán trả lời bất cứ điều gì.',
     price: 250000,
     originalPrice: 4500000,
     category: 'SEO',
     duration: '1M',
     usage: 'Shared',
-    image: 'https://cdn.worldvectorlogo.com/logos/ahrefs.svg',
+    image: 'https://diplo-media.s3.eu-central-1.amazonaws.com/2025/04/grok-xAI-Elon-Musk-Memory-1024x576.png',
     rating: 4.7,
     soldCount: 150,
     tags: []
