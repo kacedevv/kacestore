@@ -291,7 +291,7 @@ const App: React.FC = () => {
             {/* Logo */}
             <div className="flex items-center gap-3 cursor-pointer group flex-shrink-0" onClick={() => handleNavigate('shop')}>
               <img 
-                src="https://via.placeholder.com/64x64/transparent/FFFFFF?text=ICON" 
+                src="https://sf-static.upanhlaylink.com/img/image_2025120615bef4abbe3c3edc15f2538728f1f3b5.jpg" 
                 alt="KACE Logo" 
                 className="w-10 h-10 object-contain rounded-lg border border-white/10 p-1 bg-white/5"
                 title="Thay icon tại đây"
