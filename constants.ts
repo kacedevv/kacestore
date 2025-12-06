@@ -99,7 +99,7 @@ export const PRODUCTS: Product[] = [
     category: 'Game',
     duration: 'Lifetime',
     usage: 'Key',
-    image: 'https://s.yimg.com/ny/api/res/1.2/PlY47Qr4W1mB.SYwxa7dCw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTk2MA--/https://media.zenfs.com/en/windows_central_293/92258d67f10bd948050f356bd7d3faa1',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg',
     rating: 5.0,
     soldCount: 1500,
     tags: []
@@ -137,7 +137,7 @@ export const PRODUCTS: Product[] = [
     name: 'Spotify Premium',
     description: 'Nghe nhạc chất lượng cao, không quảng cáo. Nâng cấp chính chủ.',
     price: 310000,             // gói rẻ nhất 300k + 10k
-    originalPrice: 59000,
+    originalPrice: 590000,
     category: 'Entertainment',
     duration: '1M',
     usage: 'Upgrade',
