@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Kace Premium - Đẳng Cấp Số 1 Việt Nam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      :root { --font-primary: 'Be Vietnam Pro', sans-serif; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: var(--font-primary);
+        background-color: #050811;
+        color: #f1f5f9;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      .glass {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      .gradient-hero-text {
+        background: linear-gradient(135deg, #60a5fa 0%, #c084fc 50%, #60a5fa 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 5s linear infinite;
+      }
+      @keyframes shine { to { background-position: 200% center; } }
+      .bg-mesh {
+        position: fixed; inset: 0;
+        background: radial-gradient(circle at 0% 0%, rgba(37, 99, 235, 0.12) 0%, transparent 50%),
+                    radial-gradient(circle at 100% 100%, rgba(192, 132, 252, 0.1) 0%, transparent 50%);
+        z-index: -10;
+      }
+      
+      /* Global Reveal Animation on Scroll */
+      .reveal {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+        filter: blur(8px);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+
+      .hover-glow:hover { box-shadow: 0 0 60px rgba(59, 130, 246, 0.3); }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #050811; }
+      ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+
+      /* Floating Animation - Optimized to prevent clipping */
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-30px); }
+      }
+      .floating { animation: float 10s ease-in-out infinite; }
+
+      /* Animation keyframes for Tailwinds animate-in */
+      @keyframes in-from-bottom { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+      @keyframes in-fade { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes in-zoom { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+      
+      .animate-in { animation: in-fade 0.8s ease-out forwards; }
+      .animate-in.slide-in-from-bottom { animation: in-from-bottom 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+      .animate-in.zoom-in { animation: in-zoom 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+      /* Hide horizontal scroll for tabs */
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+      /* Staggered Grid Animations */
+      .stagger-item { opacity: 0; transform: translateY(30px); }
+      .stagger-item.active { animation: staggerIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+      @keyframes staggerIn { to { opacity: 1; transform: translateY(0); } }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "react-dom/client": "https://esm.sh/react-dom@^19.2.3/client",
+    "react/jsx-runtime": "https://esm.sh/react@^19.2.3/jsx-runtime",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react//": "https://esm.sh/react@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+    <script type="module" src="index.tsx"></script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div class="bg-mesh"></div>
+    <div id="root"></div>
+    <script>
+      const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -100px 0px" };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      }, observerOptions);
+
+      const observeElements = () => {
+        document.querySelectorAll('.reveal, .stagger-item').forEach((el, index) => {
+          // Add incremental delay for staggered items
+          if (el.classList.contains('stagger-item')) {
+             el.style.transitionDelay = `${(index % 4) * 0.1}s`;
+          }
+          observer.observe(el);
+        });
+      };
+      
+      window.addEventListener('load', observeElements);
+      // Re-observe periodically to handle dynamic content
+      setInterval(observeElements, 2000);
+    </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
