@@ -1,8 +1,0 @@
-{
-  "name": "Kace Premium Digital Marketplace",
-  "description": "A high-end, futuristic digital marketplace for AI tools, premium accounts, and software services with a built-in AI assistant.",
-  "requestFramePermissions": [
-    "camera",
-    "microphone"
-  ]
-}
